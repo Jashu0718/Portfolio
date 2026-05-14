@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jashwanth Reddy Eda | Robotics & AI Engineer</title>
+    <meta name="description"
+        content="Portfolio of Jashwanth Reddy Eda, Robotics & AI Engineer specializing in ROS 2, Computer Vision, and Autonomous Systems.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Roboto+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 3D Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <nav>
+        <div class="container nav-content">
+            <div class="logo">Portfolio<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h2>Hi, I'm</h2>
+                <h1>Jashwanth Reddy <span class="highlight">Eda</span></h1>
+                <h2
+                    style="color: var(--primary-color); font-weight: 600; font-family: var(--font-heading); margin-bottom: 1rem; text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);">
+                    Robotics & AI Engineer</h2>
+                <p>Mechanical Engineering graduate specializing in the convergence of robotics, computer vision, and
+                    autonomous systems. Passionate about building intelligent robotic systems for real-world deployment.
+                </p>
+                <a href="#experience" class="btn btn-primary">Explore My Work</a>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="assets/robotic_arm_pro.png" alt="3D Robotic Arm" class="hero-3d-render">
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <span class="timeline-date">Sep 2024 – Dec 2024</span>
+                    <div class="timeline-content card-panel">
+                        <h3>Robotics Engineering Intern</h3>
+                        <h4>FANUC Robotics | Hyderabad, India</h4>
+                        <ul>
+                            <li>Advanced hands-on proficiency with FANUC Mi10-D12 6-axis industrial assembly robot,
+                                programming complex motion sequences and end-effector control routines.</li>
+                            <li>Studied forward/inverse kinematics and dynamics of the Mi10-D12 platform to identify and
+                                implement optimization strategies for cycle-time reduction.</li>
+                            <li>Configured and validated robot workcells in Roboguide simulation environment for tasks
+                                including machine tending, palletization, and assembly operations.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <span class="timeline-date">May 2024 – Aug 2024</span>
+                    <div class="timeline-content card-panel">
+                        <h3>Automobile Designer – Kia Design Dept (R&D)</h3>
+                        <h4>Hyundai Motor India Engineering Pvt. Ltd. | Hyderabad, India</h4>
+                        <ul>
+                            <li>Translated complex 2D conceptual designs into high-fidelity 3D digital surface models
+                                using Autodesk Alias, ensuring 100% adherence to R&D specs.</li>
+                            <li>Collaborated within a cross-functional R&D team to optimize digital prototypes,
+                                significantly reducing the design-to-production lifecycle.</li>
+                            <li>Toured Kia Motor manufacturing plant and analyzed industrial robot workflows; proposed
+                                optimized job-allocation strategies.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <span class="timeline-date">Jan 2025 – Present</span>
+                    <div class="timeline-content card-panel">
+                        <h3>STEM Private Tutor</h3>
+                        <h4>Independent | Hyderabad, India</h4>
+                        <ul>
+                            <li>Teach Mathematics, Physics, and Chemistry to ~20 students across EQF Levels 3–6,
+                                developing adaptive instructional frameworks for diverse learners.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card card-panel">
+                    <div class="card-image-wrapper">
+                        <img src="assets/amr_pro.png" alt="Autonomous Mobile Robot" class="card-image">
+                    </div>
+                    <h3>AMR Navigation Stack</h3>
+                    <p>Developed a complete navigation stack using ROS 2 and C++, implementing SLAM for real-time
+                        mapping and localization in simulated environments. Integrated LiDAR/IMU sensor fusion and
+                        validated algorithms in NVIDIA Isaac Sim.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">ROS 2</span>
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">SLAM</span>
+                        <span class="tech-tag">Isaac Sim</span>
+                    </div>
+                </div>
+
+                <div class="project-card card-panel">
+                    <div class="card-image-wrapper">
+                        <img src="assets/vision_pro.png" alt="Vision Based Control" class="card-image">
+                    </div>
+                    <h3>Vision-Based Robotic Control</h3>
+                    <p>Engineered a real-time object tracking and visual servoing pipeline for precision target
+                        identification. Implemented YOLO/SSD deep learning detection and integrated with a robotic arm
+                        controller for pick-and-place tasks.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">YOLO/SSD</span>
+                    </div>
+                </div>
+
+                <div class="project-card card-panel">
+                    <div class="card-image-wrapper">
+                        <img src="assets/robotic_arm_pro.png" alt="RL for Robotic Arm" class="card-image">
+                    </div>
+                    <h3>RL for Robotic Arm Control</h3>
+                    <p>Designed a sim-to-real RL framework using Proximal Policy Optimization (PPO) to train a 6-DOF arm
+                        to track shifting targets. Built environment using Unity ML-Agents and achieved stable
+                        convergence.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">PPO</span>
+                        <span class="tech-tag">Unity ML-Agents</span>
+                        <span class="tech-tag">CNN</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+
+                <div class="skill-category card-panel">
+                    <h3>Robotics & Control</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">ROS 2 (Humble/Foxy)</span>
+                        <span class="skill-item">SLAM</span>
+                        <span class="skill-item">Path Planning</span>
+                        <span class="skill-item">Kinematics</span>
+                        <span class="skill-item">PID Control</span>
+                        <span class="skill-item">6-axis Industrial Robots</span>
+                    </div>
+                </div>
+
+                <div class="skill-category card-panel">
+                    <h3>AI & Computer Vision</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">PyTorch</span>
+                        <span class="skill-item">TensorFlow</span>
+                        <span class="skill-item">OpenCV</span>
+                        <span class="skill-item">MediaPipe</span>
+                        <span class="skill-item">Point Cloud Library</span>
+                        <span class="skill-item">RL (PPO)</span>
+                    </div>
+                </div>
+
+                <div class="skill-category card-panel">
+                    <h3>Programming & Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">C++17/20</span>
+                        <span class="skill-item">Python 3.x</span>
+                        <span class="skill-item">Linux</span>
+                        <span class="skill-item">Bash</span>
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">Docker</span>
+                    </div>
+                </div>
+
+                <div class="skill-category card-panel">
+                    <h3>Simulation</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">NVIDIA Isaac Sim</span>
+                        <span class="skill-item">Gazebo</span>
+                        <span class="skill-item">Unity ML-Agents</span>
+                        <span class="skill-item">FANUC Roboguide</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container card-panel" style="margin-top: 4rem; text-align: center;">
+            <h2 class="section-title">Get In Touch</h2>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">Ready to build intelligent systems together?</p>
+            <div class="contact-links">
+                <a href="mailto:ejashwanthreddy.02@gmail.com">Email</a>
+                <a href="https://github.com/jashwanthreddy-eda" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/jashwanthreddy-eda" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">+91-9618262902 | Hyderabad, India</p>
+            <p style="color: var(--border-color); margin-top: 2rem; font-size: 0.8rem;">© 2026 Jashwanth Reddy Eda. All
+                rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
